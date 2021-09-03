@@ -1,6 +1,7 @@
 import {Texture, Container, Sprite, Loader, utils, Graphics} from 'pixi.js';
 import Options from './Options';
 import Main from "../Main";
+import Utils from "./Utils";
 
 export default class Game extends Container{
     constructor() {
@@ -9,9 +10,9 @@ export default class Game extends Container{
         Loader.shared.add('hero', './assets/texture.json')
             .load(() => {
                 this.ready = true;
-                this.addChild(Main.newSprite('lamp', 0,0,0.5, 0));
-                this.addChild(Main.newSprite('wall', 0,200,0.5, 0));
-                this.addChild(Main.newSprite('wanted', 0,100,0.5, 0.5));
+                this.addChild(Utils.newSprite('lamp', 0,0,0.5, 0));
+                this.addChild(Utils.newSprite('wall', 0,200,0.5, 0));
+                this.addChild(Utils.newSprite('wanted', 0,100,0.5, 0.5));
 
                 let aa = "abcd".split("");
                 this.options = [];
