@@ -1,5 +1,4 @@
-## PLAYABLE AD TEST (pixi5+gsap)
-
+## PLAYABLE AD TEST
 Deploy environment
 npm i
 
